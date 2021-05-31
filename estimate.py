@@ -3,10 +3,10 @@ import unittest
 import random
 
 def wallis(n):
-	halfpi = 1
-	for i in range(1,n+1):
-		halfpi=halfpi*(4*i*i)/(4*i*i-1)
-    	return 2*halfpi
+   halfpi = 1
+   for i in range(1,n+1):
+      halfpi=halfpi*(4*i*i)/(4*i*i-1)
+   return 2*halfpi
 
 def monte_carlo(n):
    inside=0
