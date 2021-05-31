@@ -12,13 +12,13 @@ def monte_carlo(n):
    inside=0
    outside=0
    for i in range(0, n):
-	x=random.random()
-	y=random.random()
-	if(x*x + y*y <= 1):
-		inside+=1
-	else:
-		outside+=1
-	return 4*inside/(inside+outside)
+      x=random.random()
+      y=random.random()
+      if(x*x + y*y <= 1):
+         inside+=1
+      else:
+         outside+=1
+   return 4*inside/(inside+outside)
 
 class TestWallis(unittest.TestCase):
     def test_low_iters(self):
