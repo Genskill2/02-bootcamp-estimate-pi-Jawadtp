@@ -18,7 +18,8 @@ def monte_carlo(n):
 		inside+=1
 	else:
 		outside+=1
-	return 4*inside/(inside+outside)   	
+	return 4*inside/(inside+outside)
+
 class TestWallis(unittest.TestCase):
     def test_low_iters(self):
         for i in range(0, 5):
